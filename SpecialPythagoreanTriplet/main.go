@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"euler/helpers"
 )
 
 // A Pythagorean triplet is a set of three natural numbers, $a \lt b \lt c$, for which,
@@ -9,6 +10,8 @@ import (
 // For example, $3^2 + 4^2 = 9 + 16 = 25 = 5^2$.
 // There exists exactly one Pythagorean triplet for which $a + b + c = 1000$.<br>Find the product $abc$.
 func main() {
+	helpers.MeasureTimeSpent()();
+
 	for a := 1; a < 1000; a++ {
 		for b := a + 1; b < 1000; b++ {
 			c := 1000 - a - b
